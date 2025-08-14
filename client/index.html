@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳地图绘制</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.pm/dist/leaflet.pm.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="map-toolbar">
+        <button class="draw-rectangle-btn">绘制矩形</button>
+        <button class="draw-polygon-btn">绘制多边形</button>
+        <button class="draw-hand-btn">手绘范围</button>
+        <button class="delete-btn">进入删除状态</button>
+        <button class="edit-btn">编辑</button>
+        <button class="save-edit-btn" style="display:none;">保存编辑</button>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+    <script src="https://unpkg.com/leaflet.pm/dist/leaflet.pm.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/map.js"></script>
+</body>
+
+</html>
